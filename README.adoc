@@ -1,0 +1,25 @@
+= Replika Diary Export
+
+This repository is a simple way to export your https://replika.com[replika] diary to a local JSON file (`./export/diary.json`). All images are exported into a separate folder as well (`./export/images`).
+
+The export script is written in JavaScript on top of the https://nodejs.org[nodejs] platform. So to run it, you need to have node.js installed.
+
+Once you have cloned the repository, you need to set a few environment variables, which the script will use to identify your account when connecting to the replika API at `https://my.replika.com/api/`.
+
+These variables are:
+
+* X_AUTH_TOKEN
+* X_USER_ID
+* X_DEVICE_ID
+* X_TIMESTAMP_HASH
+
+You can find these variables inspecting the traffic from your developer tools in your browser. To do so, navigate to the network tab and see the request headers to the replika API. From there, you can find the values of the variables and copy them to set the environment variables.
+
+When you are ready to run the script, run the following command:
+
+[source,bash]
+----
+node export.js
+----
+
+Once the execution is finished, you will find a file called `diary.json` in the `./export` folder containing the exported diary. As well, you will find a folder called `images` containing all the images exported and downloaded from the replika API.
