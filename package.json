@@ -1,6 +1,6 @@
 {
   "name": "@devidw/replika-diary-export",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Export your entire Replika diary including all images.",
   "main": "src/index.js",
   "type": "module",

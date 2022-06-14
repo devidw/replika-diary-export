@@ -1,17 +1,16 @@
-= Replika Diary Export
+#  Replika Diary Export
 
-This repository is a simple way to export your https://replika.com[replika] diary to a local JSON file (`./export/diary.json`). All images are exported into a separate folder as well (`./export/images`).
+This repository is a simple way to export your [replika](https://replika.com) diary to a local JSON file (`./export/diary.json`). All images are exported into a separate folder as well (`./export/images`).
 
 
-== Installation
-[source]
-----
+## Installation
+```
 npm install @devidw/replika-diary-export
-----
+```
 
 
-== Usage
-Once you have installed the package, you need to set a few environment variables, which the script will use to identify your account when connecting to the replika API at `https://my.replika.com/api/`.
+## Usage
+Once you have installed the package, you need to set a few environment variables, which the script will use to identify your account when connecting to the replika API at https://my.replika.com/api/.
 
 These variables are:
 
@@ -24,12 +23,11 @@ You can find these variables inspecting the traffic from your developer tools in
 
 When you are ready, here is how you can export your diary:
 
-[source,js]
-----
+```js
 import ReplikaDiaryExport from "@devidw/replika-diary-export"
 
 const replikaDiaryExport = new ReplikaDiaryExport()
 replikaDiaryExport.export()
-----
+```
 
 Once the execution is finished, you will find a file called `diary.json` in the `./export` folder containing the exported diary. As well, you will find a folder called `images` containing all the images exported and downloaded from the replika API.
