@@ -1,6 +1,44 @@
 {
+  "name": "@devidw/replika-diary-export",
+  "version": "0.1.0",
+  "description": "Export your entire Replika diary including all images.",
+  "main": "src/index.js",
   "type": "module",
+  "directories": {
+    "test": "tests"
+  },
   "dependencies": {
-    "node-fetch": "^3.2.5"
-  }
+    "node-fetch": "^3.2.5",
+    "data-uri-to-buffer": "^4.0.0",
+    "node-domexception": "^1.0.0",
+    "fetch-blob": "^3.1.5",
+    "formdata-polyfill": "^4.0.10",
+    "web-streams-polyfill": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devidw/replika-diary-export.git"
+  },
+  "keywords": [
+    "nodejs",
+    "fetch",
+    "api",
+    "export",
+    "downloader",
+    "js",
+    "offline",
+    "exporter",
+    "data-ownership",
+    "replika"
+  ],
+  "author": "David Wolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devidw/replika-diary-export/issues"
+  },
+  "homepage": "https://github.com/devidw/replika-diary-export#readme"
 }
