@@ -3,6 +3,10 @@
 This repository is a simple way to export your [replika](https://replika.com) diary to a local JSON file (`./export/diary.json`). All images are exported into a separate folder as well (`./export/images`).
 
 
+> **Note**
+> Looking for a chat export instead? See [replika-export](https://index.garden/replika-export/).
+
+
 ## Installation
 ```
 npm install @devidw/replika-diary-export
