@@ -4,7 +4,7 @@ This repository is a simple way to export your [replika](https://replika.com) di
 
 
 > **Note**
-> Looking for a chat export instead? See [replika-export](https://index.garden/replika-export/).
+> Looking for a chat export instead? See [replika-chat-export](https://index.garden/replika-export/).
 
 
 ## Installation
